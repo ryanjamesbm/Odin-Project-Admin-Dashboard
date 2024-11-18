@@ -7,8 +7,37 @@ body, html{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    overflow: hidden;
 }
+
+
+/* Style the entire scrollbar */
+::-webkit-scrollbar {
+    width: 4px;  /* width for vertical scrollbar */
+    height: 8px; /* height for horizontal scrollbar */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;  /* light gray */
+    border-radius: 10px;
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: rgb(35, 139, 208);  /* dark gray */
+    border-radius: 10px;
+}
+
+/* Style the scrollbar thumb when hovered */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;  /* darker gray on hover */
+}
+
+/* Optional: Style the bottom-right corner where both scrollbars meet */
+::-webkit-scrollbar-corner {
+    background: #f1f1f1;
+}
+
 
 
 /* Main content container */
@@ -93,7 +122,6 @@ body, html{
 /* Welcome text */
 #welcome-text{
     padding: 0;
-    margin: 0;
     line-height: 0;
 }
 
@@ -150,7 +178,7 @@ body, html{
 .menu-logo{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 1vw;
     margin-top: 1em;
     margin-bottom: 1.5em;
     margin-left: 0.7em;
@@ -183,8 +211,7 @@ body, html{
     grid-row: 1 / 1;
     background-color: rgb(215, 215, 215);
     font-size: clamp(5px, 1.5vw, 16px);
-    padding-left: 2vw;
-    margin: 0;
+    padding-left: 3vw;
     padding-top: 0vh;
 }
 
@@ -197,7 +224,6 @@ body, html{
     justify-content: space-around;
     gap: 0.8vw;
     padding: 1vw;
-    margin: 0;
     overflow-y: auto;
 }
 
@@ -222,7 +248,6 @@ body, html{
 
 .project-card p{
     padding: 0;
-    margin: 0;
     font-size: clamp(10px, 0.8vw, 16px);
     color: rgb(101, 101, 101);
 }
@@ -239,7 +264,6 @@ body, html{
     grid-row: 1/1;
     font-size: clamp(5px, 1.5vw, 16px);
     padding-left: 2vw;
-    margin: 0;
     padding-top: 0vh;
 }
 
@@ -277,7 +301,6 @@ body, html{
     grid-row: 3 / 3;
     font-size: clamp(5px, 1.5vw, 16px);
     padding-left: 2vw;
-    margin: 0;
     padding-top: 0vh;
 }
 
