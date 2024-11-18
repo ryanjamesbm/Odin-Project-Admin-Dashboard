@@ -143,7 +143,7 @@ body, html{
     margin-left: 1em;
     line-height: 0;
     flex-wrap: wrap;
-    font-size: clamp(10px, 2vw, 16px);
+    font-size: clamp(10px, 1.3vw, 16px);
 }
 
 /* Menu logo section */
@@ -156,7 +156,7 @@ body, html{
     margin-left: 0.7em;
     line-height: 0;
     flex-wrap: wrap;
-    font-size: clamp(10px, 3vw, 20px);
+    font-size: clamp(10px, 2vw, 20px);
 }
 
 /* Sidebar menu break (Settings) */
@@ -249,6 +249,7 @@ body, html{
     grid-row: 2 / 2;
     border-radius: 10px;
     margin: 1vw;
+    margin-right: 2vw;
     padding: 2vw;
     overflow: hidden;
     overflow-y: auto;
@@ -283,7 +284,9 @@ body, html{
 #trending{
     background-color: white;
     border-radius: 10px;
-    margin: 1vw;
+    margin-left: 1vw;
+    margin-right: 2vw;
+    margin-bottom: 1vw;
     margin-top: 0;
     overflow: hidden;
     overflow-y: auto;
@@ -295,7 +298,7 @@ body, html{
     display: flex;
     align-items: center;
     font-size: clamp(8px, 0.8vw, 16px);
-    margin: 1.7vw;
+    margin: 1.4vw;
 }
 
 .trending-section img{
